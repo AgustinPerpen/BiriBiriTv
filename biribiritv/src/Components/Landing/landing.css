@@ -14,3 +14,21 @@
     width: 50%;
     margin-top: 210px
 }
+
+.twitch-logo{    
+    width: 50%;  
+    border: 2px solid #ED376B;
+    border-radius: 5px;
+}
+
+.twitch.info{
+    width: 50%;
+    margin-top: 150px
+}
+
+.twitch-logo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
