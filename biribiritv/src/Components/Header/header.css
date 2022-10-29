@@ -1,18 +1,21 @@
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: space-between;
 }
 
-.main-container{
-   border: 2px solid red;
+.img-container img {
+  width: 350px;
 }
 
-.main-container img{
-    width: 350px;
+nav {
+  margin-right: 100px;
+  font-size: 20px;
 }
 
-nav{
-    margin-right: 100px;
-    
+a:hover {
+  color: #f76f4b;
 }
