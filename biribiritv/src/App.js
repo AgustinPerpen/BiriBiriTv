@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Header'
 import Contacto from './Components/Contacto'
 import Programas from './Components/Programas';
+import Landing from './Components/Landing';
 
 function App() {
       
@@ -10,8 +11,9 @@ function App() {
     <div className="App">
      
       <BrowserRouter>
-      <Header/>
+      <Header/>  
         <Routes>
+          <Route path='/' element={<Landing/>}/>
           <Route path='/programas' element={<Programas/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
         </Routes>

@@ -1,0 +1,16 @@
+.landing-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.landing-logo{
+    width: 50%;
+    margin-top: 150px;
+}
+
+.landing-info{
+    width: 50%;
+    margin-top: 210px
+}
