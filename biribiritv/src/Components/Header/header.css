@@ -1,8 +1,5 @@
 .header {
   display: flex;
-
-  flex-wrap: wrap;
-
   align-items: center;
   justify-content: space-between;
 }
@@ -11,17 +8,10 @@
   width: 350px;
 }
 
-nav {
-  margin-right: 100px;
+a {
   font-size: 20px;
 }
 
-<<<<<<< HEAD
-nav{
-    margin-right: 100px;    
-}
-=======
 a:hover {
   color: #f76f4b;
 }
->>>>>>> 3fd10eb76187444cda2f3a4afa472ce8caeca805
