@@ -1,21 +1,19 @@
-<<<<<<< HEAD
 import React from 'react'
+import { Link } from 'react-router-dom'
+import './header.css'
 import Logo from '../../Assets/HeaderLogo.png'
-=======
-import React from "react";
->>>>>>> 0164e88079f673b9cc9545dfaa72f7143ab07c4f
 
 const Header = () => {
   return (
-    <div>
-<<<<<<< HEAD
-        <img src={Logo} />
+    <div className='header'>
+        <div className='main-container'>
+            <Link style={{textDecoration: 'none'}} to='/'><img src={Logo} /></Link>    
+        </div>
         <nav>
-            Home
+            <Link style={{textDecoration: 'none'}} to="/">Home   </Link>
+            <Link style={{textDecoration: 'none'}} to='/programas'>Programas   </Link>
+            <Link style={{textDecoration: 'none'}} to='/contacto'>Contacto   </Link>
         </nav>
-=======
-      <nav>Home</nav>
->>>>>>> 0164e88079f673b9cc9545dfaa72f7143ab07c4f
     </div>
   );
 };
