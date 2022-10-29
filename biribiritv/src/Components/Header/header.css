@@ -5,7 +5,9 @@
 }
 
 .img-container img {
-  width: 350px;
+  width: 200px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 a {

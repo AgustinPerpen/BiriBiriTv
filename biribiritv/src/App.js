@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Contacto from './components/Contacto'
 import Programas from './components/Programas';
 import Landing from './components/Landing';
+import Footer from './components/Footer';
 
 function App() {
       
@@ -11,12 +12,13 @@ function App() {
     <div className="App">
      
       <BrowserRouter>
-      <Header/>  
+      <Header/>      
         <Routes>
           <Route path='/' element={<Landing/>}/>
           <Route path='/programas' element={<Programas/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
         </Routes>
+      <Footer/>
       </BrowserRouter>
       
     </div>
