@@ -1,11 +1,18 @@
 import './App.css';
-
+import Header from './Components/Header/index'
 
 
 function App() {
+      
+      /*<Header/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Header/>}/>
+        </Routes>
+      </BrowserRouter>*/
   return (
     <div className="App">
-      asd
+      <Header/>
     </div>
   );
 }
