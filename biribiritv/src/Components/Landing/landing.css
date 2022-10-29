@@ -32,3 +32,12 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.program{
+    display: flex;
+    align-items: center;    
+}
+
+.program-image{
+    margin-top: 50px;
+}

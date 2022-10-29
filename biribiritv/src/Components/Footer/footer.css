@@ -1,0 +1,17 @@
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    align-items: center;
+}
+
+.footer-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+a{
+    margin-top: 20px;
+}
