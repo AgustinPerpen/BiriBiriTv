@@ -10,7 +10,8 @@ import PalabraSanta from "../../assets/PalabraSanta.png";
 
 const Landing = () => {
   return (
-    <div className="landing">      
+    <div className="landing">
+      <ReactPlayer url="https://www.twitch.tv/south_park_latino_2" playing />    
       <div className="landing__subContainer">
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={12} md={4}>
@@ -47,7 +48,7 @@ const Landing = () => {
       <div className="landing__subContainer">
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={12} md={4}>
-            <ReactPlayer url="https://www.twitch.tv/south_park_latino_2" playing />
+            
           </Grid>
           <Grid item xs={12} md={8}>            
             <img
