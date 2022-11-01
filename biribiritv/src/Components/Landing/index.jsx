@@ -7,11 +7,14 @@ import "./landing.scss";
 import Logo from "../../assets/LandingImage.png";
 import Twitch from "../../assets/TwitchLogo.png";
 import PalabraSanta from "../../assets/PalabraSanta.png";
+import FondoTwitch from "../../assets/FondoTwitch.jpg"
 
 const Landing = () => {
   return (
     <div className="landing">
-      <ReactPlayer url="https://www.twitch.tv/south_park_latino_2" playing />    
+      <div className="twitch-player">
+        <ReactPlayer url="https://www.twitch.tv/south_park_latino_2" playing />    
+      </div>
       <div className="landing__subContainer">
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={12} md={4}>
