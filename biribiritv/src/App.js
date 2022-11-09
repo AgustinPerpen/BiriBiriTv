@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header'
-import Contacto from './components/Contacto'
-import Programas from './components/Programas';
-import Landing from './components/Landing';
-import Footer from './components/Footer';
+import Header from './Components/Header'
+import Contacto from './Components/Contacto'
+import Programas from './Components/Programas';
+import Landing from './Components/Landing';
+import Footer from './Components/Footer';
+import PalabraSanta from './Components/PalabraSanta';
 
 function App() {
       
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<Landing/>}/>
           <Route path='/programas' element={<Programas/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
+          <Route path='/palabra-santa' element={<PalabraSanta/>}/>
         </Routes>
       <Footer/>
       </BrowserRouter>      
