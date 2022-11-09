@@ -5,6 +5,7 @@ import Contacto from './Components/Contacto'
 import Programas from './Components/Programas';
 import Landing from './Components/Landing';
 import Footer from './Components/Footer';
+import PalabraSanta from './Components/PalabraSanta';
 
 function App() {
       
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<Landing/>}/>
           <Route path='/programas' element={<Programas/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
+          <Route path='/palabra-santa' element={<PalabraSanta/>}/>
         </Routes>
       <Footer/>
       </BrowserRouter>      
