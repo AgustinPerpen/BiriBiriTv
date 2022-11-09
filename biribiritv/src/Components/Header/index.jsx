@@ -12,28 +12,26 @@ const Header = () => {
     <div className="header">
       <Grid
         container
-        spacing={2}
-        justifyContent="space-between"
         alignItems="center"
       >
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={6}>
           <Link to="/">
             <img src={Logo} className="header__logo" />
           </Link>
         </Grid>
 
-        <Grid item xs={12} md={4}>
+        {/* <Grid item xs={12} md={4}>
           <div></div>
-        </Grid>
+        </Grid> */}
 
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={6}>
           <div>
             <Link to="/">Home</Link>
-            <MoreVertIcon className="header__nav-icon" />
+            <MoreVertIcon className="header__nav-icon1" />
             <Link to="/programas">Programas</Link>
-            <MoreVertIcon className="header__nav-icon" />
+            <MoreVertIcon className="header__nav-icon2" />
             <Link to="/contacto">Contacto</Link>
-            <MoreVertIcon className="header__nav-icon" />
+            <MoreVertIcon className="header__nav-icon3" />
           </div>
         </Grid>
       </Grid>

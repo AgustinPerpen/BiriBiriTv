@@ -1,13 +1,22 @@
 .header {
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
 
   &__logo {
-    width: 266px;
-    padding-top: 5px;
+    width: 300px;
   }
 
-  &__nav-icon {
-    color: red;
+  &__nav-icon1 {
+    color: #ed376b;
+    margin-bottom: -6px;
+  }
+
+  &__nav-icon2 {
+    color: #f7931e;
+    margin-bottom: -6px;
+  }
+
+  &__nav-icon3 {
+    color: #f76f4b;
     margin-bottom: -6px;
   }
 
