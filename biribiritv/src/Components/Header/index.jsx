@@ -29,9 +29,6 @@ const Header = () => {
             <Link to="/">Home</Link>
             <MoreVertIcon className="header__nav-icon1" />
             <Link to="/programas">Programas</Link>
-            <MoreVertIcon className="header__nav-icon2" />
-            <Link to="/contacto">Contacto</Link>
-            <MoreVertIcon className="header__nav-icon3" />
           </div>
         </Grid>
       </Grid>

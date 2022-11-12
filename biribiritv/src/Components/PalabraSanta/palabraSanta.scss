@@ -1,0 +1,27 @@
+.palabra-santa {
+
+    &__subContainer {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10vh;
+    }
+  
+    &__box-info {
+      font-size: 22px;
+    }
+  
+    &__box-img {
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+    }
+
+    &__photo-info{
+        display: none;
+    }
+
+    &__photo :hover p{
+        display: block;
+    }
+  }
+  

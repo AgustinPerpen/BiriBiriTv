@@ -5,9 +5,7 @@
     background-image: url("../../assets/FondoTwitch.jpg");
     margin-bottom: 10vh;
   }
-
-  &__container {
-  }
+  
   &__box-info {
     font-size: 22px;
   }
@@ -17,11 +15,4 @@
     height: 100%;
     object-fit: contain;
   }
-}
-
-.banner{
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  background-image: url("../../assets/BannerPs.png");
 }

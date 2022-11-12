@@ -25,7 +25,7 @@ const Landing = () => {
       </div>
 
       <div className="landing__twitch-player">
-        <ReactPlayer url="https://www.twitch.tv/south_park_latino_2" playing />
+        <ReactPlayer url="https://www.twitch.tv/esl_csgo" playing />
       </div>
     </div>
   );

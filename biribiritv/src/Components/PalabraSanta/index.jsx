@@ -1,50 +1,47 @@
 import React from 'react'
 import Grid from "@mui/material/Grid";
-import { Link } from "react-router-dom"; 
 
-import "../Landing/landing.scss";
+
+import "../PalabraSanta/palabraSanta.scss"
 
 import PalabraSantaLogo from '../../assets/PalabraSantaLogo.png'
 import Vivo from '../../assets/Vivo.jpg'
-import Horarios from '../../assets/Horarios.png'
+import Horarios from '../../assets/horariosTrans.png'
+import Uno from '../../assets/uno.jpg'
+import Dos from '../../assets/dos.jpg'
+import Tres from '../../assets/tres.jpg'
 
 const PalabraSanta = () => {
   return (
-    <div>            
-        <div className="landing__subContainer">
-        <Grid container spacing={2} alignItems="center">
-          <Grid item xs={12} md={4}>
-            <div className="landing__subContainer-info">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit fusce
-              litora, et molestie viverra ullamcorper suspendisse tincidunt
-              montes posuere accumsan sem...
-            </div>
+    <div className='palabra-santa'>            
+        <div className="palabra-santa__subContainer">
+          <Grid container spacing={2} alignItems="center">
+            <Grid item xs={12} md={4}>
+              <div className="palabra-santa__subContainer-info">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit fusce
+                litora, et molestie viverra ullamcorper suspendisse tincidunt
+                montes posuere accumsan sem...
+              </div>
+            </Grid>
+            <Grid item xs={12} md={8}>
+              <img src={PalabraSantaLogo} className="palabra-santa__box-img" />
+            </Grid>
           </Grid>
-          <Grid item xs={12} md={8}>
-            <img src={PalabraSantaLogo} className="landing__subContainer-img" />
-          </Grid>
-        </Grid>
-      </div>
-      <div className="landing__subContainer">
-        <Grid container spacing={2} alignItems="center">
-          <Grid item xs={12} md={8}>
-            <img
-              src={Vivo}
-              className="landing__subContainer-img landing__twitch-ps-img"
-              width="1000px"
-            />
-                    
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <div className="landing__subContainer-info">
-                <img
-                src={Horarios}
-                className="landing__subContainer-img landing__twitch-ps-img"
-                />   
-            </div>
-          </Grid>
-        </Grid>
-      </div>    
+        </div>
+        <div className="palabra-santa__photo">
+            <Grid container spacing={2} alignItems="center">
+              <Grid item xs={12} md={4}>
+                <img src={Uno} className="palabra-santa__box-img" />
+                <p className='palabra-santa__photo-info'>Tu vieja en tanga</p>
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <img src={Dos} className="palabra-santa__box-img" />
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <img src={Tres} className="palabra-santa__box-img" />
+              </Grid>          
+            </Grid>
+        </div>
     </div>
   )
 }

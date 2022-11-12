@@ -1,9 +1,8 @@
 .App {
   text-align: center;
-  font-family: "Space Mono", monospace;
+  font-family: 'Omnes';
   background-color: black;
   color: white;
-
   padding-left: 3vw;
   padding-right: 3vw;
 }
@@ -11,4 +10,8 @@
 a {
   text-decoration: none;
   color: white;
+}
+
+body{
+  height: 100%;
 }
