@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
+import FooterPS from "../FooterPS";
 
 
 import "../PalabraSanta/palabraSanta.scss"
