@@ -1,6 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import Grid from "@mui/material/Grid";
+import FooterBB from "../FooterBB"
 
 import "./landing.scss";
 
@@ -25,8 +26,9 @@ const Landing = () => {
       </div>
 
       <div className="landing__twitch-player">
-        <ReactPlayer url="https://www.twitch.tv/esl_csgo" playing />
+        <ReactPlayer url="https://www.twitch.tv/biribiri_tv" playing />
       </div>
+      <FooterBB />
     </div>
   );
 };

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 
 
@@ -42,8 +43,9 @@ const PalabraSanta = () => {
               </Grid>          
             </Grid>
         </div>
+        <FooterPS />
     </div>
-  )
-}
+  );
+};
 
-export default PalabraSanta
+export default PalabraSanta;
