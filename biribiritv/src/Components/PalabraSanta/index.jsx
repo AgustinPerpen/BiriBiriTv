@@ -31,6 +31,7 @@ const PalabraSanta = () => {
             <img
               src={Vivo}
               className="landing__subContainer-img landing__twitch-ps-img"
+              width="1000px"
             />
                     
           </Grid>
