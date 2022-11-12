@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"; 
 import Grid from "@mui/material/Grid";
+import FooterBB from '../FooterBB'
 
 import "../Programas/programas.scss"
 
@@ -16,6 +17,7 @@ const Programas = () => {
             </Grid>    
         </Grid>
       </div>
+      <FooterBB/>
     </div>
   )
 }
