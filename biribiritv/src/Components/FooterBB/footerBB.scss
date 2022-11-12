@@ -1,0 +1,42 @@
+.footer-BB {
+  &__img {
+    width: 133px;
+  }
+
+  &__link-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__link-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+  }
+
+  a {
+    margin-right: 15px;
+    padding: 3px;
+  }
+
+  &__contacto-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3vh;
+  
+    .title {
+      font-size: 20px;
+    }
+  
+    span {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+
