@@ -1,8 +1,8 @@
+import React from "react";
+// import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
-import FooterPS from "../FooterPS";
-
 
 import "../PalabraSanta/palabraSanta.scss"
 
@@ -10,6 +10,8 @@ import PalabraSantaLogo from '../../assets/PalabraSantaLogo.png'
 import Uno from '../../assets/uno.jpg'
 import Dos from '../../assets/dos.jpg'
 import Tres from '../../assets/tres.jpg'
+
+import FooterPS from "../FooterPS";
 
 const PalabraSanta = () => {
 
@@ -44,19 +46,23 @@ const PalabraSanta = () => {
   return (
     <div className='palabra-santa'>            
         <div className="palabra-santa__subContainer">
-          <Grid container spacing={2} alignItems="center">
-            <Grid item xs={12} md={4}>
-              <div className="palabra-santa__subContainer-info">
+          <Grid container alignItems="center">
+            <Grid item xs={12} md={6}>
+              <div className="palabra-santa__box-info">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit fusce
                 litora, et molestie viverra ullamcorper suspendisse tincidunt
                 montes posuere accumsan sem...
               </div>
             </Grid>
-            <Grid item xs={12} md={8}>
+            <Grid item xs={12} md={6}>
               <img src={PalabraSantaLogo} className="palabra-santa__box-img" />
             </Grid>
           </Grid>
         </div>
+        <div className="palabra-santa__photos-container">
+            <Grid container spacing={2} alignItems="center">
+              <Grid item xs={12} md={4}>
+                <img src={Uno} className="palabra-santa__box-img" />
         <div className="palabra-santa__photo">
             <Grid container spacing={3} alignItems="center">
               <Grid  className="palabra-santa__photo-one" item xs={12} md={4}>

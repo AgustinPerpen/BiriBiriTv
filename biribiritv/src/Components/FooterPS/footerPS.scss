@@ -10,17 +10,6 @@
     flex-wrap: wrap;
   }
 
-  &__link-icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 3px;
-  }
-
-  a {
-    margin-right: 15px;
-    padding: 3px;
-  }
-
   &__contacto-box {
     display: flex;
     flex-direction: column;
@@ -36,5 +25,16 @@
     span {
       margin-bottom: 5px;
     }
+  }
+
+  &__link-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+  }
+
+  a {
+    margin-right: 15px;
+    padding: 3px;
   }
 }
