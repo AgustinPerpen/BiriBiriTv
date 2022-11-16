@@ -5,7 +5,6 @@ import FooterBB from '../FooterBB'
 
 import "../Programas/programas.scss";
 import PalabraSantaLink from "../../assets/PalabraSantaLink.jpg";
-import FooterBB from "../FooterBB";
 
 const Programas = () => {
   return (
