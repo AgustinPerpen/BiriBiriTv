@@ -14,9 +14,16 @@ const Landing = () => {
         <Grid container alignItems="center">
           <Grid item xs={12} md={6}>
             <div className="landing__box-info">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit fusce
-              litora, et molestie viverra ullamcorper suspendisse tincidunt
-              montes posuere accumsan sem...
+              <div className="landing__paragaph-info">
+              Este proyecto representa la creación de un medio de comunicación audiovisual multiplataforma con base en las nuevas maneras de transmitir y comunicar via internet.
+              </div>
+              <div className="landing__paragaph-info">
+              Como medio queremos poder crear un abordaje sobre diferentes formatos anclándonos en el profesionalismo y la experimentación radial y audiovisual.
+              </div>
+              <div className="landing__paragaph-info">
+              Nuestro fin es informar y entretener  pero nunca con un carácter tradicional y hegemónico. 
+              Buscamos promover tanto la cultura nacional como extranjera e innovar en las formas de comunicar con una propuesta joven ,digital, amplia y diversa.
+              </div>
             </div>
           </Grid>
           <Grid item xs={12} md={6}>
