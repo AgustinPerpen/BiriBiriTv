@@ -41,7 +41,6 @@ const PalabraSanta = () => {
   };
 
   return (
-    <>
       <div className="palabra-santa">
         <div className="palabra-santa__subContainer">
           <Grid container alignItems="center">
@@ -94,10 +93,8 @@ const PalabraSanta = () => {
             </Grid>
           </Grid>
         </div>
+        <FooterPS />
       </div>
-
-      <FooterPS />
-    </>
   );
 };
 
