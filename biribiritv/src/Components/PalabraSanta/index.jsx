@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 
 import "../PalabraSanta/palabraSanta.scss";
