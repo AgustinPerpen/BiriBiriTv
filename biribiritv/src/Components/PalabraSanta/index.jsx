@@ -17,15 +17,15 @@ const PalabraSanta = () => {
   const [infoThree, setInfoThree] = useState("");
 
   const infoOneHandler = () => {
-    setInfoOne("ONE ONE ONE ONE");
+    setInfoOne("Hola, soy Adri. Me gusta cagarme a trompadas y tomar falopa del cul… nah, mentira. Me gusta actuar, jugar al fútbol, reírme con amigos y ahora… y ahora(?");
   };
 
   const infoTwoHandler = () => {
-    setInfoTwo("TWO TWO TWO TWO");
+    setInfoTwo("Soy Nano, me gusta hacer reír pero más me gusta cuando me pagan. Ex atleta de la NBA. Me echaron por discriminación.");
   };
 
   const infoThreeHandler = () => {
-    setInfoThree("THREE THREE THREE THREE");
+    setInfoThree("Hola soy Martu Bovyn, de día hago cosas en Palabra Santa, de noche me acuesto temprano. De chica soñaba con ser nadadora olímpica pero me daba tanta ansiedad competir que tuve que dejar. Fanática de los bizcochos y militante del porro con filtro. Futura famosa con aires de diva y un poco de humildad.");
   };
 
   const infoOneRemove = () => {
@@ -47,9 +47,15 @@ const PalabraSanta = () => {
           <Grid container alignItems="center">
             <Grid item xs={12} md={6}>
               <div className="palabra-santa__box-info">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit fusce
-                litora, et molestie viverra ullamcorper suspendisse tincidunt
-                montes posuere accumsan sem...
+                <div className="palabra-santa__paragaph-info">
+                  Palabra Santa, un programa de streaming diario. Nos juntamos todos los días de 17 a 19hs a hacer el programa que queremos hacer.
+                </div>
+                <div className="palabra-santa__paragaph-info">
+                  En palabra santa nos importa el entretenimiento, el humor y nos tomamos muy en serio lo absurdo.
+                </div>
+                <div className="palabra-santa__paragaph-info">
+                 Conducen: Nano, Martu y Adri. Entrevistas, sketches, invitados, juegos y biri biri.
+                </div>
               </div>
             </Grid>
             <Grid item xs={12} md={6}>

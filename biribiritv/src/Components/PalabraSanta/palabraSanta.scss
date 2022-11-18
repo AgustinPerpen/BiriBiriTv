@@ -29,6 +29,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
+      font-size: 25px;
     }
 
     &__info-two {
@@ -39,6 +40,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
+      font-size: 25px;
     }
 
     &__info-three{
@@ -49,6 +51,12 @@
       left: 50%;
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
+      font-size: 25px;
     }
+
+    &__paragaph-info {
+      margin-bottom: 10px;
+    }
+
   }
   
