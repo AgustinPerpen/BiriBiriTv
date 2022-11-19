@@ -1,23 +1,54 @@
 .landing {
-  &__twitch-player {
-    display: flex;
-    justify-content: center;
-    background-image: url("../../assets/FondoTwitch.jpg");
-    margin-bottom: 10vh;
-  }
-  
-  &__box-info {
+  &__info-box {
     font-size: 22px;
+    word-spacing: 5px;
   }
 
-  &__box-img {
+  &__img-box {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
 
-  &__paragaph-info {
-    margin-bottom: 10px;
+  &__twitch-player {
+    display: flex;
+    justify-content: center;
+    background-image: url("../../assets/FondoTwitch.jpg");
   }
-  
+
+  @media (min-width: 900px) {
+    &__info-box {
+      padding: 0 180px;
+    }
+  }
+
+  @media (max-width: 1500px) {
+    &__info-box {
+      padding: 0 120px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__info-box {
+      padding: 0 80px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    &__info-box {
+      padding: 0 50px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    &__info-box {
+      padding: 0 30px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    &__info-box {
+      padding: 0;
+    }
+  }
 }

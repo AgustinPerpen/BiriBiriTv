@@ -1,4 +1,5 @@
 .footer-BB {
+  margin-top: 10vh;
   &__img {
     width: 133px;
   }
@@ -8,7 +9,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     margin-bottom: 3vh;
 
     .title {
@@ -20,11 +20,10 @@
     }
   }
 
-  &__link-box {
+  &__box-redes {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
   }
 
   &__link-icon {
@@ -35,6 +34,6 @@
 
   a {
     margin-right: 15px;
-    padding: 3px;
+    padding: 7.5px;
   }
 }

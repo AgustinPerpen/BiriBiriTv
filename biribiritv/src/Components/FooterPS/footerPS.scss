@@ -1,13 +1,7 @@
 .footer-PS {
+  margin-top: 10vh;
   &__img {
     width: 133px;
-  }
-
-  &__link-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
   }
 
   &__contacto-box {
@@ -15,7 +9,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     margin-bottom: 3vh;
 
     .title {
@@ -27,6 +20,12 @@
     }
   }
 
+  &__box-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__link-icon {
     width: 25px;
     height: 25px;
@@ -35,6 +34,6 @@
 
   a {
     margin-right: 15px;
-    padding: 3px;
+    padding: 7.5px;
   }
 }

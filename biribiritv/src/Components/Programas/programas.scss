@@ -1,12 +1,9 @@
 .programas {
   &__container {
-    display: flex;
-    align-items: center;
     background-image: url("../../assets/BannerPs.png");
-    margin-bottom: 10vh;
   }
 
-  &__box-img {
+  &__img-box {
     width: 100%;
     height: 100%;
     object-fit: contain;
