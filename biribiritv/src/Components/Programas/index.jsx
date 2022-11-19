@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 
 import "../Programas/programas.scss";
 import PalabraSantaLink from "../../Assets/PalabraSantaLink.jpg";
-import FooterBB from '../FooterBB'
+import FooterBB from "../FooterBB";
 
 const Programas = () => {
   return (
@@ -18,7 +18,9 @@ const Programas = () => {
           </Grid>
         </Grid>
       </div>
-      <FooterBB/>
+      <div className="programas__footerBB-container">
+        <FooterBB />
+      </div>
     </div>
   );
 };
