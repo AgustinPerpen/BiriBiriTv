@@ -18,9 +18,7 @@ const Programas = () => {
           </Grid>
         </Grid>
       </div>
-      <div className="programas__footerBB-container">
-        <FooterBB />
-      </div>
+      <FooterBB />
     </div>
   );
 };
