@@ -44,7 +44,14 @@
 
   @media (max-width: 1500px) {
     &__info-box {
+      font-size: 20px;
       padding: 0 150px;
+    }
+
+    &__conductor-container {
+      p {
+        font-size: 18px;
+      }
     }
   }
 
@@ -52,17 +59,32 @@
     &__info-box {
       padding: 0 100px;
     }
+    &__conductor-container {
+      p {
+        font-size: 16px;
+      }
+    }
   }
 
   @media (max-width: 1000px) {
     &__info-box {
       padding: 0 50px;
     }
+    &__conductor-container {
+      p {
+        font-size: 14px;
+      }
+    }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     &__info-box {
       padding: 0;
+    }
+    &__conductor-container {
+      p {
+        font-size: 20px;
+      }
     }
   }
 }
