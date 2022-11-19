@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
 
 import "../PalabraSanta/palabraSanta.scss";
-import PalabraSantaLogo from "../../assets/PalabraSantaLogo.png";
-import Adri from "../../assets/Adri.jpg";
-import Nano from "../../assets/Nano.jpg";
-import Martu from "../../assets/Martu.jpg";
+import PalabraSantaLogo from "../../Assets/PalabraSantaLogo.png";
+import Adri from "../../Assets/Adri.jpg";
+import Nano from "../../Assets/Nano.jpg";
+import Martu from "../../Assets/Martu.jpg";
 
 import FooterPS from "../FooterPS";
 

@@ -2,11 +2,11 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 
 import "./footerBB.scss";
-import FooterImage from "../../assets/FooterImage.png";
-import YouTubeIcon from "../../assets/icons/youtube.png";
-import TwitchIcon from "../../assets/icons/twitch.png";
-import InstagramIcon from "../../assets/icons/instagram.png";
-import TwitterIcon from "../../assets/icons/twitter.png";
+import FooterImage from "../../Assets/FooterImage.png";
+import YouTubeIcon from "../../Assets/icons/youtube.png";
+import TwitchIcon from "../../Assets/icons/twitch.png";
+import InstagramIcon from "../../Assets/icons/instagram.png";
+import TwitterIcon from "../../Assets/icons/twitter.png";
 
 const FooterBB = () => {
   return (

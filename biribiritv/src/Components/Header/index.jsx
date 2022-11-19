@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 import "./header.scss";
-import Logo from "../../assets/HeaderLogo.png";
+import Logo from "../../Assets/HeaderLogo.png";
 
 const Header = () => {
   return (

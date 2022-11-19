@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 import Grid from "@mui/material/Grid";
 
 import "./landing.scss";
-import Logo from "../../assets/LandingImage.png";
+import Logo from "../../Assets/LandingImage.png";
 import FooterBB from "../FooterBB";
 
 const Landing = () => {
