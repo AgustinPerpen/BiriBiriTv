@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 
 import "../Programas/programas.scss";
-import PalabraSantaLink from "../../assets/PalabraSantaLink.jpg";
+import PalabraSantaLink from "../../Assets/PalabraSantaLink.jpg";
 import FooterBB from '../FooterBB'
 
 const Programas = () => {
