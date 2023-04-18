@@ -19,7 +19,7 @@ const FooterBB = () => {
         <Grid item xs={12} md={4}>
           <div className="footer-BB__contacto-box">
             <span className="title">Contactanos:</span>
-            <span> biribiritv.contacto@gmail.com</span>
+            <span> quefla.contacto@gmail.com</span>
             <span> 341-7121552</span>
           </div>
         </Grid>
