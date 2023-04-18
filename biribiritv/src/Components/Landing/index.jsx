@@ -9,6 +9,7 @@ import FooterBB from "../FooterBB";
 const Landing = () => {
   return (
     <div className="landing">
+      <div className="landing__grid">
       <Grid container alignItems="center">
         <Grid item xs={12} md={6}>
           <div className="landing__info-box">
@@ -34,6 +35,7 @@ const Landing = () => {
           <img src={Logo} className="landing__img-box" />
         </Grid>
       </Grid>
+      </div>
 
       <div className="landing__twitch-player">
         <ReactPlayer url="https://www.twitch.tv/quefla_tv" playing />

@@ -1,7 +1,10 @@
 .footer-PS {
-  margin-top: 10vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
   &__img {
-    width: 133px;
+    width: 150px;
   }
 
   &__contacto-box {

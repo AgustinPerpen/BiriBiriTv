@@ -7,14 +7,6 @@ import PalabraSantaLink from "../../Assets/PalabraSantaLink.jpg";
 import FooterBB from "../FooterBB";
 
 const Programas = () => {
-
-  /*const programas = {
-    programas.title,    
-  }*/
-
-  // map objetc programas
-
-
   return (
     <div className="programas">
       <div className="programas__container">
@@ -22,7 +14,6 @@ const Programas = () => {
           <Grid item xs={12} md={6}>
             <Link to="/palabra-santa">
               <img src={PalabraSantaLink} className="programas__img-box" />
-              
             </Link>
           </Grid>
         </Grid>

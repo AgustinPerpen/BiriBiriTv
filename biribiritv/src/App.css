@@ -6,7 +6,8 @@ html {
   text-align: center;
   font-family: "Omnes";
   color: white;
-  padding: 0 3vh 3vh 3vh;
+  position: relative;
+  /* padding: 0 3vh 3vh 3vh; */
 }
 
 a {
