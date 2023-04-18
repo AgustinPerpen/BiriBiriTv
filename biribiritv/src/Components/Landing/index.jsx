@@ -36,7 +36,7 @@ const Landing = () => {
       </Grid>
 
       <div className="landing__twitch-player">
-        <ReactPlayer url="https://www.twitch.tv/biribiri_tv" playing />
+        <ReactPlayer url="https://www.twitch.tv/quefla_tv" playing />
       </div>
       <FooterBB />
     </div>

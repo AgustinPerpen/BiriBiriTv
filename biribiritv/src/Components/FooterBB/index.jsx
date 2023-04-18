@@ -28,23 +28,23 @@ const FooterBB = () => {
           <div className="footer-BB__box-redes">
             <>
               <img src={YouTubeIcon} className="footer-BB__link-icon"></img>
-              <a href="https://www.youtube.com/channel/UCbknDLUYWAUygqjj7c6jJIA ">
+              <a href="https://www.youtube.com/@Quefla_Tv">
                 Youtube
               </a>
             </>
             <>
               <img src={TwitchIcon} className="footer-BB__link-icon"></img>
-              <a href="https://www.twitch.tv/biribiri_tv">Twitch</a>
+              <a href="https://www.twitch.tv/quefla_tv">Twitch</a>
             </>
           </div>
           <div className="footer-BB__box-redes">
             <>
               <img src={InstagramIcon} className="footer-BB__link-icon"></img>
-              <a href="https://www.instagram.com/biribiri_tv">Instagram</a>
+              <a href="https://www.instagram.com/quefla_tv/">Instagram</a>
             </>
             <>
               <img src={TwitterIcon} className="footer-BB__link-icon"></img>
-              <a href="https://www.twitter.com/biribiri_tv">Twitter</a>
+              <a href="https://twitter.com/quefla_tv">Twitter</a>
             </>
           </div>
         </Grid>
