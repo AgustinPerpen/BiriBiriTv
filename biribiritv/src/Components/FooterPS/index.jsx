@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid";
 
 import "./footerPS.scss";
@@ -8,21 +8,54 @@ import TikTokIcon from "../../Assets/icons/tik-tok.png";
 import TwitterIcon from "../../Assets/icons/twitter.png";
 
 const FooterPS = () => {
+
+  
+  const [footerInfo, setFooterInfo] = useState(false)
+
+
+  useEffect(() =>{
+
+    if(`${window.location.pathname}` === '/palabra-santa'){
+      setFooterInfo(true)
+    }else if(`${window.location.pathname}` === '/programas'){
+      setFooterInfo(false)
+    }
+  },[])  
+
   return (
     <div className="footer-PS">
       <Grid container alignItems="center">
         <Grid item xs={12} md={4}>
-          <img src={FooterImage} className="footer-PS__img" />
+          <img src={FooterImage} className="footer-PS__img"/>
         </Grid>
+        <div>
+          {
+            footerInfo
+            ?
+          <Grid item xs={12} md={4}>          
+              <div className="footer-PS__contacto-box">
+                <span className="title">Contactanos:</span>
+                <span> palabrasanata.contacto@gmail.com</span>
+                <span> 341-7121552</span>
+              </div>          
+          </Grid>
+          :
+          <div>
+            <Grid item xs={12} md={4}>
+            <img src={FooterImage} className="footer-BB__img" />
+          </Grid>
 
-        <Grid item xs={12} md={4}>
-          <div className="footer-PS__contacto-box">
-            <span className="title">Contactanos:</span>
-            <span> palabrasanata.contacto@gmail.com</span>
-            <span> 341-7121552</span>
+          <Grid item xs={12} md={4}>
+            <div className="footer-BB__contacto-box">
+              <span className="title">Contactanos:</span>
+              <span> quefla.contacto@gmail.com</span>
+              <span> 341-7121552</span>
+            </div>
+          </Grid>
           </div>
-        </Grid>
 
+          }
+          </div>                 
         <Grid item xs={12} md={4}>
           <div className="footer-PS__box-redes">
             <>
@@ -40,7 +73,7 @@ const FooterPS = () => {
               <a href="https://www.twitter.com/palabrasantaok">Twitter</a>
             </>
           </div>
-        </Grid>
+        </Grid>        
       </Grid>
     </div>
   );
