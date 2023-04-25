@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/programas" element={<Programas />} />
           <Route path="/contacto" element={<Contacto />} />
-          <Route path="/palabra-santa" element={<PalabraSanta />} />
+          <Route path="/:palabra-santa" element={<PalabraSanta />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 
+
 import "../Programas/programas.scss";
 import PalabraSantaLink from "../../Assets/PalabraSantaLink.jpg";
 import FooterBB from "../FooterBB";
+import FooterPS from "../FooterPS";
 
 const Programas = () => {
   return (
@@ -18,7 +20,7 @@ const Programas = () => {
           </Grid>
         </Grid>
       </div>
-      <FooterBB />
+      <FooterPS />
     </div>
   );
 };
