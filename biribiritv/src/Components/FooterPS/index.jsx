@@ -16,8 +16,8 @@ const FooterPS = () => {
   const [twitter, setTwitter] = useState("")
   const [psActive, setPsActive] = useState(true)
 
-
   useEffect(() =>{
+
 
     if(`${window.location.pathname}` === '/palabra-santa'){
       setEmail("palabrasanata.contacto@gmail.com")
@@ -54,13 +54,20 @@ const FooterPS = () => {
               </a>
             </>
             <>
-              <img src={InstagramIcon} className="footer-PS__link-icon"></img>
-              <a href={instagram}>Instagram</a>
+              {psActive
+              ?
+              <>        
+                <img src={TikTokIcon} className="footer-PS__link-icon"></img>
+                <a href={instagram}>TikTok</a>
+              </>              
+              :
+              <></>
+              }
             </>
-            <>        
-              <img src={TikTokIcon} className="footer-PS__link-icon"></img>
-              <a href={instagram}>TikTok</a>
-            </>
+              <>
+                <img src={InstagramIcon} className="footer-PS__link-icon"></img>
+                <a href={instagram}>Instagram</a>
+              </>
           </div>
           <div className="footer-PS__box-redes">
             <>
