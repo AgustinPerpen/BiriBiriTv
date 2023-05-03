@@ -1,6 +1,6 @@
-import React, { useState, useLayoutEffect } from "react";
+import React from "react";
 
-import { useLocation, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import "./footer.scss";
 
@@ -19,33 +19,32 @@ const Footer = () => {
     instagram: "https://instagram.com/quefla_tv",
     twitter: "https://twitter.com/quefla_tv",
   };
-  Object.keys(quefla).map(function (key, value) {});
 
   const palabraSanta = {
     email: "palabrasanta.contacto@gmail.com",
+    instagram: "https://www.instagram.com/palabrasantaok",
+    tikTok: "https://www.tiktok.com/@palabrasantaok",
+    twitter: "https://www.twitter.com/palabrasantaok",
   };
-  Object.keys(quefla).map(function (key, value) {});
 
-  function queflaHandler() {
-    const { email, instagram, twitter } = quefla;
+  function handler() {
+    let current = {};
+    if (pathname === "/palabra-santa") {
+      current = palabraSanta;
+    } else {
+      current = quefla;
+    }
+
     return (
       <Grid item xs={12} md={4}>
         <div className="footer__contacto-box">
-          <p> {email}</p>
-          <a href={instagram} target="_blank">
+          <p> {current.email}</p>
+          <p> {current.instagram}</p>
+          <p> {current.twitter}</p>
+          <p> {current.tikTok}</p>
+          {/* <a href={instagram} target="_blank">
             Instagram
-          </a>
-        </div>
-      </Grid>
-    );
-  }
-
-  function palabraSantaHandler() {
-    const { email } = palabraSanta;
-    return (
-      <Grid item xs={12} md={4}>
-        <div className="footer__contacto-box">
-          <p> {email}</p>
+          </a> */}
         </div>
       </Grid>
     );
@@ -57,10 +56,7 @@ const Footer = () => {
         <Grid item xs={12} md={4}>
           <img src={FooterImage} className="footer__img" />
         </Grid>
-
-        {pathname === "/palabra-santa"
-          ? palabraSantaHandler()
-          : queflaHandler()}
+        {handler()}
       </Grid>
     </div>
   );
