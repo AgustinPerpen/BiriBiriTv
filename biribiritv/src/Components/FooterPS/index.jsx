@@ -9,6 +9,7 @@ import TwitterIcon from "../../Assets/icons/twitter.png";
 import YouTubeIcon from "../../Assets/icons/youtube.png";
 
 const FooterPS = () => {
+  const [footerInfo, setFooterInfo] = useState(false);
 
   const [email, setEmail] = useState("")
   const [instagram, setInstagram] = useState("")
@@ -30,7 +31,7 @@ const FooterPS = () => {
       setTwitter("https://twitter.com/quefla_tv")
       setPsActive(false)
     }
-  },[])  
+  }, []);
 
   return (
     <div className="footer-PS">
@@ -75,7 +76,7 @@ const FooterPS = () => {
               <a href={twitter}>Twitter</a>
             </>
           </div>
-        </Grid>        
+        </Grid>
       </Grid>
     </div>
   );

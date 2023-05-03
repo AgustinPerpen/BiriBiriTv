@@ -1,0 +1,21 @@
+.footer {
+  height: 40vh;
+  margin-top: 15vh;
+
+  &__logo {
+    width: 150px;
+  }
+
+  &__element {
+    a {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+    }
+  }
+
+  &__icon {
+    width: 50px;
+    margin-right: 2vw;
+  }
+}

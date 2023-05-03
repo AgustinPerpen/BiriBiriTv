@@ -2,10 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 
-
 import "../Programas/programas.scss";
 import PalabraSantaLink from "../../Assets/PalabraSantaLink.jpg";
-import FooterBB from "../FooterBB";
+import FooterBB from "../Footer";
 import FooterPS from "../FooterPS";
 
 const Programas = () => {
@@ -20,7 +19,6 @@ const Programas = () => {
           </Grid>
         </Grid>
       </div>
-      <FooterPS />
     </div>
   );
 };
