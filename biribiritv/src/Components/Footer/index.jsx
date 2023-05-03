@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
 
 import { useLocation } from "react-router-dom";
 import Grid from "@mui/material/Grid";
@@ -7,17 +8,20 @@ import "./footer.scss";
 import FooterImage from "../../Assets/FooterImage.png";
 
 import InstagramIcon from "../../Assets/icons/instagram.png";
-// import TwitterIcon from "../../Assets/icons/twitter.png";
-// import TwitchIcon from "../../Assets/icons/twitch.png";
-// import YouTubeIcon from "../../Assets/icons/youtube.png";
+import TikTokIcon from "../../Assets/icons/tik-tok.png";
+import TwitterIcon from "../../Assets/icons/twitter.png";
+import YouTubeIcon from "../../Assets/icons/youtube.png";
 
 const Footer = () => {
+
   const { pathname } = useLocation();
+  const [psActive, setPsActive] = useState(true)
 
   const quefla = {
     email: "quefla.contacto@gmail.com",
     instagram: "https://instagram.com/quefla_tv",
     twitter: "https://twitter.com/quefla_tv",
+    youtube: "https://www.youtube.com/@Quefla_Tv",
   };
 
   const palabraSanta = {
@@ -27,6 +31,15 @@ const Footer = () => {
     tikTok: "https://www.tiktok.com/@palabrasantaok",
   };
 
+  useEffect(() =>{
+    if (pathname === "/palabra-santa") {
+      setPsActive(true)
+    } else {
+      setPsActive(false) 
+    }
+  }, [pathname])
+
+  
   function handler() {
     let current = {};
     if (pathname === "/palabra-santa") {
@@ -34,12 +47,14 @@ const Footer = () => {
     } else {
       current = quefla;
     }
+    
 
     return (
       <>
         <Grid item xs={12} md={4}>
           <div>
             <p> {current.email}</p>
+            <p>341-7121552</p>
           </div>
         </Grid>
 
@@ -54,15 +69,32 @@ const Footer = () => {
 
         <Grid item xs={12} md={4}>
           <a href={current.twitter} target="_blank">
+          <img src={TwitterIcon} className="footer__icon" />
             <div>twitter</div>
           </a>
         </Grid>
 
         <Grid item xs={12} md={4}>
           <div>
-            <a href={current.tikTok} target="_blank">
-              <div>tikTok</div>
-            </a>
+            <>
+              {
+                psActive
+                ?
+                <>
+                  <a href={current.tikTok} target="_blank">
+                  <img src={TikTokIcon} className="footer__icon" />
+                    <div>tikTok</div>
+                  </a>
+                </>
+                :
+                <>
+                <a href={current.youtube} target="_blank">
+                <img src={YouTubeIcon} className="footer__icon" />
+                  <div>youtube</div>
+                </a>
+                </>
+              }
+            </>
           </div>
         </Grid>
       </>
