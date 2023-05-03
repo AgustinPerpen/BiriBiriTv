@@ -58,7 +58,7 @@ const FooterPS = () => {
               ?
               <>        
                 <img src={TikTokIcon} className="footer-PS__link-icon"></img>
-                <a href={instagram}>TikTok</a>
+                <a href={tikTok}>TikTok</a>
               </>              
               :
               <></>
