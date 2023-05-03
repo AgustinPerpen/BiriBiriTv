@@ -44,12 +44,12 @@ const Footer = () => {
         </Grid>
 
         <Grid item xs={12} md={4}>
-          <a href={current.instagram} target="_blank">
-            <div className="footer__element">
+          <div className="footer__element">
+            <a href={current.instagram} target="_blank">
               <img src={InstagramIcon} className="footer__icon" />
               <span>Instagram</span>
-            </div>
-          </a>
+            </a>
+          </div>
         </Grid>
 
         <Grid item xs={12} md={4}>

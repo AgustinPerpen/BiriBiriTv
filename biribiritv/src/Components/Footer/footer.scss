@@ -7,9 +7,11 @@
   }
 
   &__element {
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
+    a {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+    }
   }
 
   &__icon {
