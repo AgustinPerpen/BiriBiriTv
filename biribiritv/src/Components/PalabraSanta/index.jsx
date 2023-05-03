@@ -86,8 +86,6 @@ const PalabraSanta = () => {
           </div>
         </Grid>
       </Grid>
-
-      <FooterPS />
     </div>
   );
 };

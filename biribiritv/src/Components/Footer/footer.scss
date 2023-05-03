@@ -1,0 +1,41 @@
+.footer {
+  border: 1px solid red;
+  height: 40vh;
+  margin-top: 15vh;
+
+  &__img {
+    width: 150px;
+  }
+
+  // &__contacto-box {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+
+  //   p {
+  //     font-size: 1.2rem;
+  //   }
+
+  //   span {
+  //     font-size: 1rem;
+  //   }
+  // }
+
+  // &__box-redes {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+
+  // &__link-icon {
+  //   width: 25px;
+  //   height: 25px;
+  //   margin-right: 3px;
+  // }
+
+  // a {
+  //   margin-right: 15px;
+  //   padding: 7.5px;
+  // }
+}
