@@ -1,27 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import Grid from "@mui/material/Grid";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 import "../PalabraSanta/palabraSanta.scss";
-import PalabraSantaLogo from "../../Assets/PalabraSantaLogo.png";
-import Adri from "../../Assets/Adri.jpg";
-import Nano from "../../Assets/Nano.jpg";
-import Martu from "../../Assets/Martu.jpg";
 
-import FooterPS from "../FooterPS";
+import PalabraSantaLogo from "../../Assets/PalabraSanta.png";
 
 const PalabraSanta = () => {
-  const [showInfoAdri, setShowInfoAdri] = useState(false);
-  const [showInfoNano, setShowInfoNano] = useState(false);
-  const [showInfoMartu, setShowInfoMartu] = useState(false);
-
   return (
     <div className="palabra-santa">
       <Grid container alignItems="center">
         <Grid item xs={12} md={6}>
-          <div
-            className="palabra-santa__info-box
-          "
-          >
+          <img src={PalabraSantaLogo} className="palabra-santa__ps-img" />
+        </Grid>
+        <Grid item xs={12} md={5}>
+          <div className="palabra-santa__info">
             <p>
               Palabra Santa, un programa de streaming diario. Nos juntamos todos
               los días de 17 a 19hs a hacer el programa que queremos hacer.
@@ -32,58 +30,36 @@ const PalabraSanta = () => {
             </p>
             <p>
               Conducen: Nano, Martu y Adri. Entrevistas, sketches, invitados,
-              juegos y biri biri.
+              juegos y un monton de cosas.
             </p>
           </div>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <img src={PalabraSantaLogo} className="palabra-santa__img-box" />
         </Grid>
       </Grid>
 
-      <Grid container spacing={3} alignItems="center">
-        <Grid item xs={12} md={4}>
-          <div
-            onMouseEnter={() => setShowInfoAdri(true)}
-            onMouseLeave={() => setShowInfoAdri(false)}
-            className="palabra-santa__conductor-container"
+      <Grid container>
+        <Grid item xs={12}>
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
           >
-            <img src={Adri} />
-            <p hidden={!showInfoAdri}>
-              "Hola, soy Adri. Me gusta cagarme a trompadas y tomar falopa del
-              cul… nah, mentira. Me gusta actuar, jugar al fútbol, reírme con
-              amigos y ahora… y ahora?."
-            </p>
-          </div>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <div
-            onMouseEnter={() => setShowInfoNano(true)}
-            onMouseLeave={() => setShowInfoNano(false)}
-            className="palabra-santa__conductor-container"
-          >
-            <img src={Nano} />
-            <p hidden={!showInfoNano}>
-              "Soy Nano, me gusta hacer reír pero más me gusta cuando me pagan.
-              Ex atleta de la NBA. Me echaron por discriminación."
-            </p>
-          </div>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <div
-            onMouseEnter={() => setShowInfoMartu(true)}
-            onMouseLeave={() => setShowInfoMartu(false)}
-            className="palabra-santa__conductor-container"
-          >
-            <img src={Martu} />
-            <p hidden={!showInfoMartu}>
-              "Hola soy Martu Bovyn, de día hago cosas en Palabra Santa, de
-              noche me acuesto temprano. De chica soñaba con ser nadadora
-              olímpica pero me daba tanta ansiedad competir que tuve que dejar.
-              Fanática de los bizcochos y militante del porro con filtro. Futura
-              famosa con aires de diva y un poco de humildad."
-            </p>
-          </div>
+            <SwiperSlide className="slide">
+              <div class="nanoCard"></div>
+            </SwiperSlide>
+
+            <SwiperSlide className="slide">
+              <div class="adriCard"></div>
+            </SwiperSlide>
+
+            <SwiperSlide className="slide">
+              <div class="martuCard"></div>
+            </SwiperSlide>
+          </Swiper>
         </Grid>
       </Grid>
     </div>

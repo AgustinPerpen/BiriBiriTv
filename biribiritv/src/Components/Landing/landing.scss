@@ -1,64 +1,15 @@
 .landing {
-  &__info-box {
-    p {
-      font-size: 1.3rem;
-      font-weight: 600;
-      word-spacing: 5px;
-    }
-  }
-
-  &__img-box {
-    width: 100%;
-    object-fit: contain;
-    @media (max-width: 900px) {
-      width: 75%;
-    }
-  }
-
   &__twitch-player {
     display: flex;
     justify-content: center;
-    margin-top: 15vh;
-    background: url("../../Assets/FondoTwitch.jpg") no-repeat center;
-    @media (max-width: 900px) {
-      margin-top: 5vh;
-    }
-  }
 
-  @media (min-width: 900px) {
-    &__info-box {
-      padding: 0 180px;
-    }
-  }
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
-  @media (max-width: 1500px) {
-    &__info-box {
-      font-size: 18px;
-      padding: 0 120px;
-    }
-  }
-
-  @media (max-width: 1200px) {
-    &__info-box {
-      padding: 0 80px;
-    }
-  }
-
-  @media (max-width: 1100px) {
-    &__info-box {
-      padding: 0 50px;
-    }
-  }
-
-  @media (max-width: 1000px) {
-    &__info-box {
-      padding: 0 30px;
-    }
-  }
-
-  @media (max-width: 600px) {
-    &__info-box {
-      padding: 0;
-    }
+    background: url("../../Assets/TwitchBg.jpg") no-repeat center;
   }
 }

@@ -16,8 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/programas" element={<Programas />} />
-          <Route path="/contacto" element={<Contacto />} />
           <Route path="/:palabra-santa" element={<PalabraSanta />} />
+          <Route path="/contacto" element={<Contacto />} />
         </Routes>
         <Footer />
       </BrowserRouter>

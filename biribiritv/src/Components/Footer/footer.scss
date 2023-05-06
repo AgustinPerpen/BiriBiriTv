@@ -1,21 +1,29 @@
 .footer {
-  height: 40vh;
-  margin-top: 15vh;
+  margin: 5vh 0 7.5vh;
 
-  &__logo {
+  &__quefla-img {
     width: 150px;
+    margin-bottom: 2.5vh;
   }
 
-  &__element {
-    a {
-      display: flex;
-      align-items: center;
-      width: fit-content;
+  &__ps-img {
+    width: 100px;
+    margin-bottom: 2.5vh;
+  }
+
+  &__info {
+    p {
+      margin-top: 0;
     }
+  }
+
+  &__links-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
   }
 
   &__icon {
     width: 50px;
-    margin-right: 2vw;
   }
 }

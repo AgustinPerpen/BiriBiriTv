@@ -1,21 +1,19 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React from "react";
 
 import { useLocation } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import "./footer.scss";
 
-import FooterImage from "../../Assets/FooterImage.png";
+import FooterQuefla from "../../Assets/FooterQuefla.png";
+import FooterPs from "../../Assets/FooterPs.png";
 
 import InstagramIcon from "../../Assets/icons/instagram.png";
-import TikTokIcon from "../../Assets/icons/tik-tok.png";
 import TwitterIcon from "../../Assets/icons/twitter.png";
 import YouTubeIcon from "../../Assets/icons/youtube.png";
+import TikTokIcon from "../../Assets/icons/tik-tok.png";
 
 const Footer = () => {
-
   const { pathname } = useLocation();
-  const [psActive, setPsActive] = useState(true)
 
   const quefla = {
     email: "quefla.contacto@gmail.com",
@@ -31,15 +29,13 @@ const Footer = () => {
     tikTok: "https://www.tiktok.com/@palabrasantaok",
   };
 
-  useEffect(() =>{
-    if (pathname === "/palabra-santa") {
-      setPsActive(true)
-    } else {
-      setPsActive(false) 
-    }
-  }, [pathname])
+  const logo =
+    pathname !== "/palabra-santa" ? (
+      <img src={FooterQuefla} className="footer__quefla-img" />
+    ) : (
+      <img src={FooterPs} className="footer__ps-img" />
+    );
 
-  
   function handler() {
     let current = {};
     if (pathname === "/palabra-santa") {
@@ -47,54 +43,37 @@ const Footer = () => {
     } else {
       current = quefla;
     }
-    
 
     return (
       <>
-        <Grid item xs={12} md={4}>
-          <div>
-            <p> {current.email}</p>
-            <p>341-7121552</p>
-          </div>
-        </Grid>
+        {pathname === "/contacto" && (
+          <Grid item xs={12} className="footer__info">
+            <p>{current.email}</p>
+            <p>+54 9 341 7 121 552</p>
+          </Grid>
+        )}
 
-        <Grid item xs={12} md={4}>
-          <div className="footer__element">
+        <Grid item xs={12}>
+          <div className="footer__links-container">
             <a href={current.instagram} target="_blank">
               <img src={InstagramIcon} className="footer__icon" />
-              <span>Instagram</span>
             </a>
-          </div>
-        </Grid>
 
-        <Grid item xs={12} md={4}>
-          <a href={current.twitter} target="_blank">
-          <img src={TwitterIcon} className="footer__icon" />
-            <div>twitter</div>
-          </a>
-        </Grid>
+            <a href={current.twitter} target="_blank">
+              <img src={TwitterIcon} className="footer__icon" />
+            </a>
 
-        <Grid item xs={12} md={4}>
-          <div>
-            <>
-              {
-                psActive
-                ?
-                <>
-                  <a href={current.tikTok} target="_blank">
-                  <img src={TikTokIcon} className="footer__icon" />
-                    <div>tikTok</div>
-                  </a>
-                </>
-                :
-                <>
-                <a href={current.youtube} target="_blank">
+            {current.youtube && (
+              <a href={current.youtube} target="_blank">
                 <img src={YouTubeIcon} className="footer__icon" />
-                  <div>youtube</div>
-                </a>
-                </>
-              }
-            </>
+              </a>
+            )}
+
+            {current.tikTok && (
+              <a href={current.tikTok} target="_blank">
+                <img src={TikTokIcon} className="footer__icon" />
+              </a>
+            )}
           </div>
         </Grid>
       </>
@@ -103,9 +82,9 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <Grid container alignItems="center">
-        <Grid item xs={12} md={4}>
-          <img src={FooterImage} className="footer__logo" />
+      <Grid container>
+        <Grid item xs={12}>
+          {logo}
         </Grid>
         {handler()}
       </Grid>

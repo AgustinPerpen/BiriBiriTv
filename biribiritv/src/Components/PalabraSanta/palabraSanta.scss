@@ -1,104 +1,333 @@
 .palabra-santa {
-  &__info-box {
-    p {
-      font-size: 1.3rem;
-      font-weight: 600;
-      word-spacing: 5px;
+  &__ps-img {
+    width: 60%;
+
+    //FALTAN MQ
+
+    @media (max-width: 900px) {
+      margin: 5vh 0 2.5vh;
     }
   }
 
-  &__img-box {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  &__info {
+    padding: 0 5vh;
+
+    text-align: justify;
+    text-justify: inter-word;
   }
 
-  &__conductor-container {
-    position: relative;
+  .swiper {
+    margin: 7.5vh 0 12.5vh;
+
+    background-image: url("../../Assets/Trama1.png");
+
+    @media (max-width: 450px) {
+      background-image: none;
+    }
+
+    background-size: cover;
+    border-radius: 20px;
 
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
+      width: 40%;
 
-    p {
-      font-size: 24px;
-      font-weight: bold;
-      word-spacing: 5px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-    }
-  }
-
-  &__conductor-container:hover {
-    opacity: 0.7;
-    transition: opacity 0.5s ease-in-out;
-  }
-
-  @media (min-width: 900px) {
-    &__info-box {
-      padding: 0 200px;
-    }
-  }
-
-  @media (max-width: 1500px) {
-    &__info-box {
-      font-size: 18px;
-      padding: 0 150px;
-    }
-
-    &__conductor-container {
-      p {
-        font-size: 18px;
+      @media (max-width: 900px) {
+        width: 65%;
       }
     }
   }
 
-  @media (max-width: 1200px) {
-    &__info-box {
-      padding: 0 100px;
-    }
-    &__conductor-container {
-      p {
-        font-size: 16px;
-      }
-    }
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 10px;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    color: #fff;
   }
 
-  @media (max-width: 1000px) {
-    &__info-box {
-      padding: 0 50px;
-    }
-    &__conductor-container {
-      p {
-        font-size: 14px;
-      }
-    }
+  .swiper-pagination-bullet {
+    background: #fff;
   }
 
-  @media (max-width: 900px) {
-    &__info-box {
-      padding: 0;
-    }
-    &__conductor-container {
-      p {
-        font-size: 20px;
-      }
-    }
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-self: center;
   }
 
-  @media (max-width: 600px) {
-    &__info-box {
-      padding: 0;
+  //CARDS
+
+  //NANO
+  .nanoCard {
+    position: relative;
+    width: 100%;
+
+    @media (min-width: 450px) {
+      width: 85%;
     }
-    &__conductor-container {
-      p {
-        font-size: 16px;
-      }
+
+    @media (min-width: 500px) {
+      width: 75%;
     }
+
+    @media (min-width: 600px) {
+      width: 65%;
+    }
+
+    @media (min-width: 750px) {
+      width: 55%;
+    }
+
+    @media (min-width: 800px) {
+      width: 50%;
+    }
+
+    @media (min-width: 900px) {
+      width: 45%;
+    }
+
+    height: 560px;
+    background-image: url("../../Assets/Nano.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .nanoCard::before,
+  .nanoCard::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+
+    background-color: #aee249;
+    background-image: url("../../Assets/Trama.png");
+    background-size: 300px;
+
+    transition: all 0.5s;
+  }
+
+  .nanoCard::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+
+  .nanoCard::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+  }
+
+  .nanoCard:hover::before,
+  .nanoCard:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+    background-color: #000;
+    background-size: cover;
+
+    transition: all 0.5s;
+  }
+
+  .nanoCard:hover:after {
+    content: "Soy nano me gusta hacer reir pero más me gusta cuando me pagan. Ex atleta de la NBA. Me echaron por discriminación.";
+    font-size: 1.2rem;
+  }
+
+  //ADRI
+  .adriCard {
+    position: relative;
+    width: 100%;
+
+    @media (min-width: 450px) {
+      width: 85%;
+    }
+
+    @media (min-width: 500px) {
+      width: 75%;
+    }
+
+    @media (min-width: 600px) {
+      width: 65%;
+    }
+
+    @media (min-width: 750px) {
+      width: 55%;
+    }
+
+    @media (min-width: 800px) {
+      width: 50%;
+    }
+
+    @media (min-width: 900px) {
+      width: 45%;
+    }
+
+    height: 560px;
+    background-image: url("../../Assets/Adri.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .adriCard::before,
+  .adriCard::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+
+    background-color: #aee249;
+    background-image: url("../../Assets/Trama.png");
+    background-size: 300px;
+
+    transition: all 0.5s;
+  }
+
+  .adriCard::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+
+  .adriCard::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+  }
+
+  .adriCard:hover::before,
+  .adriCard:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+    background-color: #000;
+    background-size: cover;
+
+    transition: all 0.5s;
+  }
+
+  .adriCard:hover:after {
+    content: "Soy Adri. Me gusta cagarme a trompadas y tomar falopa del cul... nah, mentira. Me gusta actuar, jugar al futbol, reírme con amigos y ahora... y ahora?";
+    font-size: 1.2rem;
+  }
+
+  //Martu
+  .martuCard {
+    position: relative;
+    width: 100%;
+
+    @media (min-width: 450px) {
+      width: 85%;
+    }
+
+    @media (min-width: 500px) {
+      width: 75%;
+    }
+
+    @media (min-width: 600px) {
+      width: 65%;
+    }
+
+    @media (min-width: 750px) {
+      width: 55%;
+    }
+
+    @media (min-width: 800px) {
+      width: 50%;
+    }
+
+    @media (min-width: 900px) {
+      width: 45%;
+    }
+
+    height: 560px;
+    background-image: url("../../Assets/Martu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .martuCard::before,
+  .martuCard::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+
+    background-color: #aee249;
+    background-image: url("../../Assets/Trama.png");
+    background-size: 300px;
+
+    transition: all 0.5s;
+  }
+
+  .martuCard::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+
+  .martuCard::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+  }
+
+  .martuCard:hover::before,
+  .martuCard:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+    background-color: #000;
+    background-size: cover;
+
+    transition: all 0.5s;
+  }
+
+  .martuCard:hover:after {
+    content: "Soy Martu Bovyn, de día hago cosas en Palabra Santa, de noche me acuesto temprano. Fanática de los bizcochos y militante del porro con filtro. Futura famosa con aires de diva y un poco de humildad.";
+    font-size: 1.2rem;
   }
 }

@@ -1,19 +1,4 @@
-.header {
-  margin: 5vh 0;
-
-  &__logo {
-    width: 275px;
-  }
-
-  &__links-container {
-    display: flex;
-    justify-content: space-around;
-
-    @media (max-width: 900px) {
-      margin-top: 5vh;
-    }
-  }
-
+.headerBtn {
   /* === removing default button style ===*/
   .button {
     margin: 0;
@@ -28,12 +13,7 @@
     --border-right: 6px;
     --text-stroke-color: rgba(255, 255, 255, 0.6);
     --animation-color: #fff;
-
     --fs-size: 1.3rem;
-    @media (max-width: 450px) {
-      --fs-size: 1.1rem;
-    }
-
     letter-spacing: 3px;
     text-decoration: none;
     font-size: var(--fs-size);
