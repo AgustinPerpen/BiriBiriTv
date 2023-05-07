@@ -17,7 +17,7 @@
   }
 
   .swiper {
-    margin: 7.5vh 0 12.5vh;
+    margin: 7.5vh 0;
 
     background-image: url("../../Assets/Trama1.png");
 
@@ -44,10 +44,19 @@
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 10px;
     color: #fff;
+
+    @media (max-width: 450px) {
+      display: none;
+    }
   }
 
   .swiper-pagination-bullet {
     background: #fff;
+
+    @media (max-width: 450px) {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
   }
 
   .slide {
@@ -145,7 +154,7 @@
   }
 
   .nanoCard:hover:after {
-    content: "Soy nano me gusta hacer reir pero más me gusta cuando me pagan. Ex atleta de la NBA. Me echaron por discriminación.";
+    content: "Soy Nano. Me gusta hacer reir pero más me gusta cuando me pagan. Ex atleta de la NBA. Me echaron por discriminación.";
     font-size: 1.2rem;
   }
 
@@ -327,7 +336,7 @@
   }
 
   .martuCard:hover:after {
-    content: "Soy Martu Bovyn, de día hago cosas en Palabra Santa, de noche me acuesto temprano. Fanática de los bizcochos y militante del porro con filtro. Futura famosa con aires de diva y un poco de humildad.";
+    content: "Soy Martu Bovyn. De día hago cosas en Palabra Santa, de noche me acuesto temprano. Fanática de los bizcochos y militante del porro con filtro. Futura famosa con aires de diva y un poco de humildad.";
     font-size: 1.2rem;
   }
 }
